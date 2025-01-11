@@ -1,0 +1,101 @@
+/* Base Styling */
+body {
+    font-family: 'Funnel Sans', sans-serif; /* Appliquer la police Funnel Sans */
+    background-color: #222;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.movies-container {
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+.movies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.movie-item {
+    padding: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.movie-item:hover {
+    transform: scale(1.05);
+}
+
+.movie-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.movie-item p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #ddd;
+}
+
+/* Supprimer le style par défaut des liens */
+a {
+    text-decoration: none; /* Enlever le soulignement */
+    color: inherit; /* Utiliser la couleur du texte par défaut */
+}
+
+/* Ajouter un style au survol du lien si besoin */
+a:hover {
+    text-decoration: none; /* Empêcher le soulignement au survol */
+    color: #fff; /* Modifier la couleur sur le survol si nécessaire */
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .movies-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
+
+
+.search-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+#search-input {
+    padding: 10px;
+    width: 300px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.search-results {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.search-result-item {
+    margin: 10px 0;
+}
+
+.search-result-item img {
+    width: 50px;
+    height: 75px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
